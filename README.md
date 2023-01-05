@@ -1,12 +1,12 @@
-<h1 align="center">
-Avoid Machine Learning Pitfalls
-</h1>
+## How to avoid machine learning pitfalls: A guide for academic researchers
 
-### How to avoid machine learning pitfalls: A guide for academic researchers
+<br />
+
 This was a research about how to avoid machine learning pitfalss by <b><i>Michael A. Lones</i></b> .<br /> 
 This document gives a concise outline of some of the common mistakes that occur when using machine learning techniques, and what can be done to avoid them.
 
 ### Research Analysis
+
 It’s normal to want to rush into training and evaluating models, 
 but it’s important to take the time to think about the goals of a project, 
 to fully understand the data that will be used to support these goals, to consider any limitations of the data that need to be addressed, a
@@ -26,6 +26,7 @@ academic progress. So, think carefully about how you are going to use data in yo
 how you are going to measure the true performance of your models, and how you are going to report this performance in a meaningful and informative way.
 
 ### Conclusion 
+
 The aim of academic research is not self-aggrandisement, but rather an opportunity to contribute to knowledge. 
 In order to effectively contribute to knowledge, you need to provide a complete picture of your work, covering both what worked and what didn’t. 
 ML is often about trade-offs — it’s very rare that one model is better than another in every way that matters — and you should try to 

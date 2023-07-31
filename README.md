@@ -21,15 +21,20 @@ model dataset which we are going to work on.
 ```json
 [
   {
-    'host': '127.0.0.1',
-    'vulnerabilities': [
-      'sql raw input',
-      'multi source access',
-      'hardcode password'
+    "host": "127.0.0.1",
+    "vulnerabilities": [
+      "sql raw input",
+      "multi source access",
+      "hardcode password"
     ],
-    'attacks': [
-      'sql-injection'
+    "attacks": [
+      "sql-injection"
     ]
   }
 ]
 ```
+
+## Output
+
+Now the model response should be something like this. We give vulnerabilities of a host to the model and
+it should return us the attacks that we can perform on this host.

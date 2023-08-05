@@ -21,7 +21,6 @@ model dataset which we are going to work on.
 ```json
 [
   {
-    "host": "127.0.0.1",
     "vulnerabilities": [
       "sql raw input",
       "multi source access",

@@ -21,3 +21,11 @@ model dataset which we are going to work on.
     ]
   }
 ]
+
+## contribute
+
+In order to add new data into our dataset, run the following python script and fill the inputs:
+
+```shell
+python3 main.py 100 # this is the number of batches that you want to import
+```

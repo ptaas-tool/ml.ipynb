@@ -1,0 +1,17 @@
+[
+    {
+        "vulnerabilities": [
+            "ssti",
+            "business logic",
+            "ssrf",
+            "security misconfiguration",
+            "brute force",
+            "unrestricted access to sensitive business flows"
+        ],
+        "attacks": [
+            "sql injection attack",
+            "large payload post attack",
+            "open redirection attack"
+        ]
+    }
+]

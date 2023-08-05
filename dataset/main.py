@@ -2,6 +2,7 @@ import random
 import json
 import glob
 import os
+import sys
 
 
 
@@ -15,7 +16,7 @@ number = int(latest_file.split('/')[2].split('.')[1])
 VULNERABILITIES_PATH = "./docs/vulnerabilities.txt"
 ATTACKS_PATH = "./docs/attacks.txt"
 OUTPUT_PATH = f"./backup/data.{number+1:03d}.json"
-BATCHS = 2
+BATCHS = int(sys.argv[1])
 
 
 # base lists

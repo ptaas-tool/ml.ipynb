@@ -2,10 +2,11 @@ import random
 import json
 
 
+
 # const variables
 VULNERABILITIES_PATH = "./docs/vulnerabilities.txt"
 ATTACKS_PATH = "./docs/attacks.txt"
-OUTPUT_PATH = "data.json"
+OUTPUT_PATH = "./backup/data.json"
 BATCHS = 2
 
 

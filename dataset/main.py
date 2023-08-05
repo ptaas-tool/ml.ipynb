@@ -1,12 +1,20 @@
 import random
 import json
+import glob
+import os
 
+
+
+# find the number of file
+list_of_files = glob.glob('./backup/*')
+latest_file = max(list_of_files, key=os.path.getctime)
+number = int(latest_file.split('/')[2].split('.')[1])
 
 
 # const variables
 VULNERABILITIES_PATH = "./docs/vulnerabilities.txt"
 ATTACKS_PATH = "./docs/attacks.txt"
-OUTPUT_PATH = "./backup/data.json"
+OUTPUT_PATH = f"./backup/data.{number+1:03d}.json"
 BATCHS = 2
 
 

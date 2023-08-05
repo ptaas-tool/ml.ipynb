@@ -1,0 +1,100 @@
+broken object level authorization
+broken authentication
+broken object property level authorization
+unrestricted resource consumption
+broken function level authorization
+unrestricted access to sensitive business flows
+server side request forgery
+security misconfiguration
+improper inventory management
+unsafe consumption of apis
+mail-injection
+rce
+xss-scripting
+sql-injection
+nosql-injection
+dos
+path-traversal
+ss-include
+community-xss
+soap
+injection attacks
+broken session management
+excessive premissions
+sensitive data exposure
+xxe
+xml external entity
+broken access control
+xss
+cross site scripting
+csrf
+cross site request forgery
+insecure direct object references
+idor
+lack of rate limiting
+insufficient logging
+insufficient monitoring
+ssrf
+server side reqeust forgery
+insecure file uploads
+data validation
+input validation
+insecure deserialization
+elevation of privilege
+mass assignment
+unrestricted cors
+cors
+insecure third party dependencies
+sqli
+remote file inclusion
+rfi
+local file inclusion
+lfi
+clickjacking
+session hijacking
+session sidejacking
+brute force
+credential stuffing
+directory traversal
+ddos
+man in the middle
+mitm
+phishing
+buffer overflow
+zero day
+insider threats
+dns spoofing
+business logic
+email header injection
+http parameter pollution
+hpp
+server side template injection
+ssti
+object injection
+xpath injection
+http response spilitting
+cononicalization
+ldap injection
+http host header
+http verb tampering
+session fixation
+header manipulation
+cookie poisoning
+exploiting know vulnerabilities
+session replay
+business email compromise
+bypassing captcha
+form field manipulation
+fingerprinting
+data exfiltration
+os version
+webhooks and callbacks
+serverless function
+side channel
+api versioning
+race conditions
+lack of two factor authentication
+2fa
+unrestricted api endpoints
+content spoofing
+insecure third party libraries

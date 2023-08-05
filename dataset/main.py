@@ -1,0 +1,3 @@
+# base lists
+vulnerabilities = []
+attacks = []

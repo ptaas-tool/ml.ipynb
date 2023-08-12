@@ -5,7 +5,6 @@ import os
 import sys
 
 
-
 # find the number of file
 list_of_files = glob.glob('./backup/*')
 latest_file = max(list_of_files, key=os.path.getctime)
@@ -16,7 +15,7 @@ number = int(latest_file.split('/')[2].split('.')[1])
 VULNERABILITIES_PATH = "./docs/vulnerabilities.txt"
 ATTACKS_PATH = "./docs/attacks.txt"
 OUTPUT_PATH = f"./backup/data.{number+1:03d}.json"
-BATCHS = int(sys.argv[1])
+BATCHES = int(sys.argv[1])
 
 
 # base lists
@@ -39,25 +38,28 @@ print(f'[INFO] loaded {len(attacks)} attacks, {len(vulnerabilities)} vulnerabili
 outputs = []
 
 # creating 100 attacks
-for i in range(0, BATCHS):
+for i in range(0, BATCHES):
     # get random vulnerabilities
-    vtmp = random.randint(1, 10)
-    vlist = random.sample(vulnerabilities, k=vtmp)
+    v_tmp = random.randint(1, 10)
+    v_list = random.sample(vulnerabilities, k=v_tmp)
     
     print()
-    print(f'batch {i+1} outof {BATCHS}')
+    print(f'batch {i+1} out of {BATCHES}')
     print("=======")
-    
-    for item in vlist:
-        print(item, end=" | ")
+    print()
+
+    print(" | ".join(v_list))
        
     print() 
     print("=======")
     print()
-    
+
     # select attacks
     for index, item in enumerate(attacks):
-        print(f'[{index}] {item}', end=", ")
+        if index == len(attacks) - 1:
+            print(f'[{index}] {item}')
+        else:
+            print(f'[{index}] {item}', end=", ")
     
     print()
     print()
@@ -65,7 +67,7 @@ for i in range(0, BATCHS):
     
     # generate output
     outputs.append({
-        'vulnerabilities': vlist,
+        'vulnerabilities': v_list,
         'attacks': [attacks[int(j)] for j in selected]
     })
     

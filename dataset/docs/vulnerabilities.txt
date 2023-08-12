@@ -9,7 +9,10 @@ security misconfiguration
 improper inventory management
 unsafe consumption of apis
 mail-injection
-rce
+mail server
+logical errors
+big return data
+huge payload
 xss-scripting
 sql-injection
 nosql-injection
@@ -20,17 +23,14 @@ community-xss
 soap
 injection attacks
 broken session management
-excessive premissions
+excessive permissions
 sensitive data exposure
-xxe
 xml external entity
 broken access control
-xss
 cross site scripting
 csrf
 cross site request forgery
 insecure direct object references
-idor
 lack of rate limiting
 insufficient logging
 insufficient monitoring
@@ -45,20 +45,18 @@ mass assignment
 unrestricted cors
 cors
 insecure third party dependencies
-sqli
 remote file inclusion
 rfi
 local file inclusion
 lfi
 clickjacking
 session hijacking
-session sidejacking
+session side-jacking
 brute force
 credential stuffing
 directory traversal
 ddos
 man in the middle
-mitm
 phishing
 buffer overflow
 zero day
@@ -69,11 +67,10 @@ email header injection
 http parameter pollution
 hpp
 server side template injection
-ssti
 object injection
 xpath injection
-http response spilitting
-cononicalization
+http response splitting
+canonicalization
 ldap injection
 http host header
 http verb tampering
@@ -86,8 +83,16 @@ business email compromise
 bypassing captcha
 form field manipulation
 fingerprinting
-data exfiltration
+data filtration
 os version
+vm version
+on container image
+docker image
+third party dependency
+mysql server
+input fields
+html form
+input form
 webhooks and callbacks
 serverless function
 side channel
@@ -98,3 +103,10 @@ lack of two factor authentication
 unrestricted api endpoints
 content spoofing
 insecure third party libraries
+no header token
+authentication lack
+multi resource
+http query
+http path
+request path
+request input

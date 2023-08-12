@@ -16,6 +16,7 @@ VULNERABILITIES_PATH = "./docs/vulnerabilities.txt"
 ATTACKS_PATH = "./docs/attacks.txt"
 OUTPUT_PATH = f"./backup/data.{number+1:03d}.json"
 BATCHES = int(sys.argv[1])
+MAX_RAND = int(sys.argv[2])
 
 
 # base lists
@@ -40,7 +41,7 @@ outputs = []
 # creating 100 attacks
 for i in range(0, BATCHES):
     # get random vulnerabilities
-    v_tmp = random.randint(1, 10)
+    v_tmp = random.randint(1, MAX_RAND)
     v_list = random.sample(vulnerabilities, k=v_tmp)
     
     print()

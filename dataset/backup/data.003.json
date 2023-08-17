@@ -444,7 +444,7 @@
             "broken access control"
         ],
         "attacks": [
-            "large payload post attack"
+            "zero-day attack"
         ]
     },
     {

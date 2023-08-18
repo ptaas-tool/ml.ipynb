@@ -6,7 +6,10 @@ import sys
 
 
 # find the number of file
-list_of_files = glob.glob('./backup/*')
+list_of_files = glob.glob('./backup/*.json')
+if len(list_of_files) == 0:
+    list_of_files.append("/backup/data.000.json")
+
 latest_file = max(list_of_files, key=os.path.basename)
 number = int(latest_file.split('/')[2].split('.')[1])
 

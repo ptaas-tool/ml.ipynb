@@ -6,7 +6,10 @@ import random
 
 
 # find the number of file
-list_of_files = glob.glob('./backup/*')
+list_of_files = glob.glob('./backup/*.json')
+if len(list_of_files) == 0:
+    list_of_files.append("/backup/data.000.json")
+
 latest_file = max(list_of_files, key=os.path.basename)
 number = int(latest_file.split('/')[2].split('.')[1])
 
@@ -23,7 +26,7 @@ with open(ATTACKS_PATH, 'r', encoding='UTF-8') as file:
     while line := file.readline():
         attacks.append(line.rstrip())
         
-with open("cheat.txt") as file:
+with open("./provider/cheat.txt") as file:
     for line in file:
         line = line.rstrip()
         parts = line.split("->")

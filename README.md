@@ -1,7 +1,7 @@
 # Automated Penetration Testing Model
 
-![]()
-![]()
+![](https://img.shields.io/badge/Language-Python-blue)
+![](https://img.shields.io/badge/Context-ML-blue)
 
 Implementing a machine learning model in order to find the attacks
 that can be performed during a penetration testing by using analysis result data

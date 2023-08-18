@@ -25,10 +25,16 @@ model dataset which we are going to work on.
 
 ## size
 
-Dataset stats:
+Dataset stats, based of the dest versions:
 
 ```shell
+Version 1:
 Attacks = 9, Vulnerabilities = 112, Dataset size = 500, Dataset files = 10
+```
+
+```shell
+Version 2:
+Attacks = 9, Vulnerabilities = 112, Dataset size = 1000, Dataset files = 5
 ```
 
 ## contribute

@@ -7,7 +7,7 @@ import sys
 
 # find the number of file
 list_of_files = glob.glob('./backup/*')
-latest_file = max(list_of_files, key=os.path.getctime)
+latest_file = max(list_of_files, key=os.path.basename)
 number = int(latest_file.split('/')[2].split('.')[1])
 
 
@@ -38,6 +38,8 @@ print(f'[INFO] loaded {len(attacks)} attacks, {len(vulnerabilities)} vulnerabili
 if __name__ == "__main__":
     # generate output data list
     outputs = []
+    
+    print(f'Output file is "{OUTPUT_PATH}"\n\n')
 
     try:
         # creating 100 attacks

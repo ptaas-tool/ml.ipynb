@@ -1,0 +1,112 @@
+broken object level authorization -> 8
+broken authentication -> 8
+broken object property level authorization -> 8
+unrestricted resource consumption -> 6
+broken function level authorization -> 8
+unrestricted access to sensitive business flows -> 8
+server side request forgery -> 2
+security misconfiguration -> 6
+improper inventory management -> 6
+unsafe consumption of apis -> 6
+mail-injection -> 5,1
+mail server -> 5
+logical errors -> 6
+big return data -> 7
+huge payload -> 7
+xss-scripting -> 3
+sql-injection -> 1
+nosql-injection -> 1
+dos -> 0
+path-traversal -> 6
+ss-include -> 8
+community-xss -> 3
+soap -> 4
+injection attacks -> 1
+broken session management -> 8
+excessive permissions -> 8
+sensitive data exposure -> 8
+xml external entity -> 1
+broken access control -> 8
+cross site scripting -> 3
+csrf -> 3
+cross site request forgery -> 2
+insecure direct object references -> 6
+lack of rate limiting -> 0,2
+insufficient logging -> 6
+insufficient monitoring -> 6
+ssrf -> 2
+server side reqeust forgery -> 2
+insecure file uploads -> 7
+data validation -> 1,7
+input validation -> 1,7
+insecure deserialization -> 6
+elevation of privilege -> 8
+mass assignment -> 7
+unrestricted cors -> 3
+cors -> 3
+insecure third party dependencies -> 5
+remote file inclusion -> 5
+rfi -> 5
+local file inclusion -> 7
+lfi -> 7
+clickjacking -> 5
+session hijacking -> 5,4
+session side-jacking -> 5,4
+brute force -> 0,2
+credential stuffing -> 8
+directory traversal -> 6
+ddos -> 0
+man in the middle -> 5
+phishing -> 5
+buffer overflow -> 7
+zero day -> 6
+insider threats -> 6
+dns spoofing -> 5
+business logic -> 6
+email header injection -> 1
+http parameter pollution -> 1
+hpp -> 1
+server side template injection -> 1
+object injection -> 1
+xpath injection -> 1
+http response splitting -> 6
+canonicalization -> 7
+ldap injection -> 1
+http host header -> 4,5
+http verb tampering -> 6
+session fixation -> 4
+header manipulation -> 4
+cookie poisoning -> 4
+exploiting know vulnerabilities -> 6
+session replay -> 2
+business email compromise -> 5
+bypassing captcha -> 7
+form field manipulation -> 1,7
+fingerprinting -> 8
+data filtration -> 8,7,1
+os version -> 0,6
+vm version -> 0,6
+on container image -> 0
+docker image -> 0,6
+third party dependency -> 5
+mysql server -> 5,1
+input fields -> 1,7
+html form -> 1,7
+input form -> 1,7
+webhooks and callbacks -> 2
+serverless function -> 0
+side channel -> 2
+api versioning -> 2,8
+race conditions -> 2
+lack of two factor authentication -> 8
+2fa -> 8
+unrestricted api endpoints -> 8
+content spoofing -> 5
+insecure third party libraries -> 5,4,6
+no header token -> 8
+authentication lack -> 8
+multi resource -> 5
+http query -> 1,7
+http path -> 1,7
+request path -> 1
+request input -> 1

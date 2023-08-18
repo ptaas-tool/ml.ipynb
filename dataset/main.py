@@ -35,45 +35,53 @@ with open(ATTACKS_PATH, 'r', encoding='UTF-8') as file:
 
 print(f'[INFO] loaded {len(attacks)} attacks, {len(vulnerabilities)} vulnerabilities into system.')
 
-# generate output data list
-outputs = []
+if __name__ == "__main__":
+    # generate output data list
+    outputs = []
 
-# creating 100 attacks
-for i in range(0, BATCHES):
-    # get random vulnerabilities
-    v_tmp = random.randint(1, MAX_RAND)
-    v_list = random.sample(vulnerabilities, k=v_tmp)
-    
-    print()
-    print(f'batch {i+1} out of {BATCHES}')
-    print("=======")
-    print()
+    try:
+        # creating 100 attacks
+        for i in range(0, BATCHES):
+            # get random vulnerabilities
+            v_tmp = random.randint(1, MAX_RAND)
+            v_list = random.sample(vulnerabilities, k=v_tmp)
+            
+            print()
+            print(f'batch {i+1} out of {BATCHES}')
+            print("=======")
+            print()
 
-    print(" | ".join(v_list))
-       
-    print() 
-    print("=======")
-    print()
+            print(" | ".join(v_list))
+            
+            print() 
+            print("=======")
+            print()
 
-    # select attacks
-    for index, item in enumerate(attacks):
-        if index == len(attacks) - 1:
-            print(f'[{index}] {item}')
-        else:
-            print(f'[{index}] {item}', end=", ")
-    
-    print()
-    print()
-    selected = input('> select attacks: ').split(',')
-    
-    # generate output
-    outputs.append({
-        'vulnerabilities': v_list,
-        'attacks': [attacks[int(j)] for j in selected]
-    })
-    
-    print()
-    
-# save output
-with open(OUTPUT_PATH, 'w') as file:
-    file.write(json.dumps(outputs, indent=4))
+            # select attacks
+            for index, item in enumerate(attacks):
+                if index == len(attacks) - 1:
+                    print(f'[{index}] {item}')
+                else:
+                    print(f'[{index}] {item}', end=", ")
+            
+            print()
+            print()
+            selected = input('> select attacks: ').split(',')
+            
+            # generate output
+            outputs.append({
+                'vulnerabilities': v_list,
+                'attacks': [attacks[int(j)] for j in selected]
+            })
+            
+            print()
+            
+        # save output
+        with open(OUTPUT_PATH, 'w') as file:
+            file.write(json.dumps(outputs, indent=4))
+    except KeyboardInterrupt:
+        print('terminated ...')
+        # save output
+        with open(OUTPUT_PATH, 'w') as file:
+            file.write(json.dumps(outputs, indent=4))
+

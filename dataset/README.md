@@ -23,6 +23,14 @@ model dataset which we are going to work on.
 ]
 ```
 
+## size
+
+Dataset stats:
+
+```shell
+Attacks = 9, Vulnerabilities = 112, Dataset size = 200, Dataset files = 7
+```
+
 ## contribute
 
 In order to add new data into our dataset, run the following python script and fill the inputs:

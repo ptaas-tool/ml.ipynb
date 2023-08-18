@@ -503,5 +503,40 @@
             "xss attack",
             "dos attack"
         ]
+    },
+    {
+        "vulnerabilities": [
+            "canonicalization"
+        ],
+        "attacks": [
+            "zero-day attack"
+        ]
+    },
+    {
+        "vulnerabilities": [
+            "cors"
+        ],
+        "attacks": [
+            "xss attack"
+        ]
+    },
+    {
+        "vulnerabilities": [
+            "broken session management"
+        ],
+        "attacks": [
+            "role base access controller attack"
+        ]
+    },
+    {
+        "vulnerabilities": [
+            "man in the middle",
+            "exploiting know vulnerabilities",
+            "clickjacking",
+            "dns spoofing"
+        ],
+        "attacks": [
+            "border gateway protocol hijacking attack"
+        ]
     }
 ]

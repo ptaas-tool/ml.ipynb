@@ -28,7 +28,7 @@ model dataset which we are going to work on.
 Dataset stats:
 
 ```shell
-Attacks = 9, Vulnerabilities = 112, Dataset size = 200, Dataset files = 7
+Attacks = 9, Vulnerabilities = 112, Dataset size = 500, Dataset files = 10
 ```
 
 ## contribute

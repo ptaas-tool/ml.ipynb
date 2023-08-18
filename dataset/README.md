@@ -28,13 +28,18 @@ model dataset which we are going to work on.
 Dataset stats, based of the dest versions:
 
 ```shell
-Version 1:
+Version v0.1 (simple):
 Attacks = 9, Vulnerabilities = 112, Dataset size = 500, Dataset files = 10
 ```
 
 ```shell
-Version 2:
+Version v0.2 (complex):
 Attacks = 9, Vulnerabilities = 112, Dataset size = 1000, Dataset files = 5
+```
+
+```shell
+Version v0.3 (normal):
+Attacks = 9, Vulnerabilities = 112, Dataset size = 1000, Dataset files = 10
 ```
 
 ## contribute

@@ -46,3 +46,10 @@ model dataset which we are going to work on.
 
 Now the model response should be something like this. We give vulnerabilities of a host to the model and
 it should return us the attacks that we can perform on this host.
+
+```json
+[
+  'sql-injection',
+  'xss',
+]
+```

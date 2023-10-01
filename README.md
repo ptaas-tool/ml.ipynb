@@ -49,7 +49,7 @@ it should return us the attacks that we can perform on this host.
 
 ```json
 [
-  'sql-injection',
-  'xss',
+  "sql-injection",
+  "xss",
 ]
 ```

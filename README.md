@@ -1,4 +1,4 @@
-# Automated Penetration Testing Model
+# PTaaS Model
 
 ![](https://img.shields.io/badge/Language-Python-blue)
 ![](https://img.shields.io/badge/Context-ML-blue)

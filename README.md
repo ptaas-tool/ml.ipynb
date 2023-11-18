@@ -11,7 +11,7 @@ which consists of system vulnerabilities, bugs, and bad smells.
 
 The project dataset is created with help of network and security engineers by analysing 2500
 vulnerabilities and choosing the right attacks based on each state. Kinda like simulating 2500
-penetration testing attack done by a human agent. Take a look into to our [dataset](./dataset/README.md).
+penetration testing attack done by a human agent. Take a look into to our [dataset](https://github.com/ptaas-tool/dataset).
 
 ## Model
 

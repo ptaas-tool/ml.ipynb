@@ -19,6 +19,14 @@ The project dataset is created with help of network and security engineers by an
 vulnerabilities and choosing the right attacks based on each state. Kinda like simulating 3500
 penetration testing attack done by a human agent. Take a look into to our [dataset](https://github.com/ptaas-tool/dataset).
 
+## Execute
+
+In order to execute the model to see its results use the following command:
+
+```sh
+jupyter nbconvert --execute ./notebook/analysis_data.ipynb
+```
+
 ## Model
 
 Our dataset is labelled and its linear, therefore, we are using supervised learning. Our algorithm is 
